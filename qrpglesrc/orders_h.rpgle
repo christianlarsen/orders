@@ -19,3 +19,9 @@ dcl-pr getNumofCustomerOrders zoned(9) extproc;
     customerid like(order_t.customerid) const;
 end-pr;
 
+// ------------------------------------------------------------------------------------
+// getNumOfOrders - Retrieve the number of orders in table ORDERS (of any customer)
+// ------------------------------------------------------------------------------------
+dcl-pr getNumofOrders zoned(9) extproc;
+end-pr;
+

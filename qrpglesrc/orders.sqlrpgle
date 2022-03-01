@@ -36,3 +36,22 @@ dcl-proc getNumofCustomerOrders export;
     return numOfOrders;
 
 end-proc;
+
+// ------------------------------------------------------------------------------------
+// getNumOfCustomers - Retrieve the number of orders (of any customer)
+// ------------------------------------------------------------------------------------
+dcl-proc getNumofOrders export;
+
+    dcl-pi getNumofOrders zoned(9) end-pi;
+
+    dcl-s numOfOrders zoned(9); 
+
+    // Retrieving number of records in table ORDERS 
+    exec sql
+        select count(*) into :numOfOrders 
+        from clv1.orders;
+        
+    return numOfOrders;
+
+end-proc;
+

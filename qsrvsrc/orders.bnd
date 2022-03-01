@@ -1,4 +1,5 @@
 STRPGMEXP SIGNATURE('ORDERS_0.1') PGMLVL(*CURRENT)
 export symbol(Orders_IsOk)
 export symbol(getNumofCustomerOrders)
+export symbol(getNumofOrders)
 ENDPGMEXP
