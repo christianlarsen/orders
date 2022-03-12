@@ -1,5 +1,7 @@
 create or replace table clv1.orders (
-    order_id for                id          numeric(5) not null generated always as identity (start with 1 , increment by 1), 
+    order_id for                id          numeric(5) not null 
+                                            generated always as identity 
+                                            (start with 1 , increment by 1), 
     customer_id for             customerid  numeric(5),
     order_data for              otherdata   varchar(250) not null,
 
