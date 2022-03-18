@@ -8,7 +8,6 @@ create or replace table clv1.orders (
     check (id >= 0),
     primary key(id),
     foreign key(customerid) references clv1.customers(id)
-    on delete cascade
 )
 rcdfmt rorders;
 
