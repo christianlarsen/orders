@@ -13,12 +13,6 @@ rcdfmt rorders;
 
 label on table clv1.orders is 'ORDERS';
 
-comment on column clv1.orders (
-    id          is 'Order ID',
-    customerid  is 'Customer ID',
-    otherdata   is 'Order other data'
-);
-
 label on column clv1.orders (
     id          is 'ID',
     customerid  is 'Customer ID',
