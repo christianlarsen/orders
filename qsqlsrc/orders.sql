@@ -13,8 +13,6 @@ rcdfmt rorders;
 
 label on table clv1.orders is 'ORDERS';
 
-comment on table clv1.orders is 'Any comments here...';
-
 comment on column clv1.orders (
     id          is 'Order ID',
     customerid  is 'Customer ID',
